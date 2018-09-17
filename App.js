@@ -4,10 +4,10 @@ import { StyleSheet, Text, View, AppRegistry } from 'react-native'
 class FlexboxExamples extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.box}/>
-        <View style={styles.box}/>
-        <View style={styles.box}/>
+      <View style={{flex: 1}}>
+        <View style={{flex: 1, backgroundColor: 'red'}} />
+        <View style={{flex: 2, backgroundColor: 'green'}} />
+        <View style={{flex: 3, backgroundColor: 'blue'}} />
       </View>
     )
   }
